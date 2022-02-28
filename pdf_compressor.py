@@ -1,18 +1,16 @@
-import PyPDF2
+import PIL
+from tkinter.filedialog import *
+from PIL import Image
 
-FILE_Path = ""
+# Ask file name
+FILE_Path = askopenfilename()
+img = PIL.Image.open(FILE_Path)
+myHeight, myWidth = img.size
 
-# Compress an pdf file
-def compress_file(pdf_path):
-    """Image Compressor
+# Compress image '.jpg'
+img = img.resize((myHeight, myWidth), PIL.Image.ANTIALIAS)
+# Ask file 
+save_path = asksaveasfilename()
 
-    Parameters
-    ----------
-
-    Returns
-    -------
-    
-    """
-
-if __name__ == "__main__":
-    compress_file(FILE_PATH)
+# Compress File name
+img.save(save_path+"_compressed.jpg")
