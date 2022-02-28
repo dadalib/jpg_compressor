@@ -9,8 +9,8 @@ myHeight, myWidth = img.size
 
 # Compress image '.jpg'
 img = img.resize((myHeight, myWidth), PIL.Image.ANTIALIAS)
-# Ask file 
+# Ask file
 save_path = asksaveasfilename()
 
 # Compress File name
-img.save(save_path+"_compressed.jpg")
+img.save(save_path + "_compressed.jpg")
