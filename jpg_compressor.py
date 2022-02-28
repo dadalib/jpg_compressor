@@ -2,7 +2,7 @@ import PIL
 from tkinter.filedialog import *
 from PIL import Image
 
-# Ask file name
+# Ask file name thanks to tkinter
 FILE_Path = askopenfilename()
 img = PIL.Image.open(FILE_Path)
 myHeight, myWidth = img.size
