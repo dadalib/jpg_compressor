@@ -21,7 +21,7 @@ Compress JPG image. Replace with your text
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Intall your python  .
+Intall your python and pip  .
 * Python 3.9.2
 * pip 22.0.3
 
@@ -36,14 +36,13 @@ All requires library are present in requirements.txt  file.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone git@github.com:dadalib/jpg_compressor.git
    ```
-3. Install  packages
+2. Install  packages
    ```sh
-   npm install
+   pip install -r requirements.txt
    ```
 
 
